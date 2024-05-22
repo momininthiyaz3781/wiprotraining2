@@ -6,3 +6,6 @@ Write a recursive DFS function for a given undirected graph. The function should
 
 Task 3: Union-Find for Cycle Detection
 Write a Union-Find data structure with path compression. Use this data structure to detect a cycle in an undirected graph.
+
+Task 1: Dijkstra’s Shortest Path Finder
+Code Dijkstra’s algorithm to find the shortest path from a start node to every other node in a weighted graph with positive weights.
