@@ -1,0 +1,5 @@
+task 5: Breadth-First Search (BFS) Implementation
+For a given undirected graph, implement BFS to traverse the graph starting from a given node and print each node in the order it is visited.
+ 
+Task 6: Depth-First Search (DFS) Recursive
+Write a recursive DFS function for a given undirected graph. The function should visit every node and print it out.
