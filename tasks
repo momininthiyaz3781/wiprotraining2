@@ -3,3 +3,6 @@ For a given undirected graph, implement BFS to traverse the graph starting from 
  
 Task 6: Depth-First Search (DFS) Recursive
 Write a recursive DFS function for a given undirected graph. The function should visit every node and print it out.
+
+Task 3: Union-Find for Cycle Detection
+Write a Union-Find data structure with path compression. Use this data structure to detect a cycle in an undirected graph.
