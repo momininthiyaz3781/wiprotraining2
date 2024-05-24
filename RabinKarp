@@ -47,3 +47,11 @@ public class RabinKarp {
     search(pattern, txt, q);
   }
 }
+
+Hash Collisions: 
+
+The Rabin-Karp algorithm’s performance can be affected by hash collisions, which occur when two different strings have the same hash value. This can lead to a false positive where the algorithm might think it has found a match when it hasn’t.
+
+To handle hash collisions, the algorithm performs a string comparison when a hash match is found to confirm if the strings are indeed equal. This step ensures that the algorithm maintains a low probability of collision and high performance.
+
+The choice of a good hash function and a large prime number as the modulus can significantly reduce the chances of collisions. However, in the worst-case scenario, where all hash values collide, the algorithm degrades to ( O(nm) ) performance, where ( n ) is the length of the text and ( m ) is the length of the pattern. But with a well-designed hash function, the average-case time complexity remains ( O(n + m) ), which is efficient for most practical uses.
