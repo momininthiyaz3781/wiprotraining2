@@ -9,3 +9,6 @@ Write a Union-Find data structure with path compression. Use this data structure
 
 Task 1: Dijkstra’s Shortest Path Finder
 Code Dijkstra’s algorithm to find the shortest path from a start node to every other node in a weighted graph with positive weights.
+
+task 4: Rabin-Karp Substring Search
+Implement the Rabin-Karp algorithm for substring search using a rolling hash. Discuss the impact of hash collisions on the algorithm's performance and how to handle them.
