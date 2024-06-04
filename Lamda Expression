@@ -1,0 +1,80 @@
+package com.functionalprogramming;
+
+public class Addition {
+    public static void main(String[] args) {
+        // Using a traditional method
+        int sum = add(5, 7);
+        System.out.println("Sum: " + sum);
+
+        // Using a lambda expression
+        AdditionInterface additionLambda = (a, b) -> {
+            int result = a + b;
+            System.out.println("Sum: " + result);
+            return result;
+        };
+        
+        // Execute the lambda
+        sum = additionLambda.add(5, 7);
+    }
+
+    public static int add(int a, int b) {
+        int sum = a + b;
+        System.out.println("Sum: " + sum);
+        return sum;
+    }
+
+    @FunctionalInterface
+    interface AdditionInterface {
+        int add(int a, int b);
+    }
+}
+...................................................................................................................
+package com.functionalprogramming;
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        // Using a traditional method
+        printHelloWorld();
+
+        // Using a lambda expression
+        Runnable helloWorldLambda = () -> System.out.println("Hello, World!");
+        
+        // Execute the lambda
+        helloWorldLambda.run();
+    }
+
+    public static void printHelloWorld() {
+        System.out.println("Hello, World!");
+    }
+}
+.....................................................................................................................
+package com.functionalprogramming;
+
+public class StringLength {
+    public static void main(String[] args) {
+        // Using a traditional method
+        int length = getStringLength("Hello, World!");
+        System.out.println("Length: " + length);
+
+        // Using a lambda expression
+        StringLengthInterface stringLengthLambda = (s) -> {
+            int len = s.length();
+            System.out.println("Length: " + len);
+            return len;
+        };
+        
+        // Execute the lambda
+        length = stringLengthLambda.getLength("Hello, World!");
+    }
+
+    public static int getStringLength(String s) {
+        int length = s.length();
+        System.out.println("Length: " + length);
+        return length;
+    }
+
+    @FunctionalInterface
+    interface StringLengthInterface {
+        int getLength(String s);
+    }
+}
